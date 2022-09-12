@@ -10,50 +10,64 @@
         #screen {
             width: 100%;
             height: 90px;
-            font-size:large;
         }   
+        .container{ 
+            font-size:large;
+            max-width:500px;
+        }
+        .row{
+            width:100%;
+            height:100px;
+        }
+        .col-3, #screen{
+            line-height: 100px;
+        }
+        #orange {
+            background-color: orange;
+        }
+
     </style>
 </head>
 <body >
     <div class="container ">
         <!-- screen -->
         <div class="row bg-dark text-light">
-            <div class="text-end text-middle my-auto" id="screen" >screen</div>
+            <div class="text-end fw-bold " id="screen" ></div>
         </div>
         <!-- first row -->
         <div class="row">
-            <div class="col-3 text-center" onclick="calculate('C');">C</div>
-            <div class="col-3 text-center" onclick="calculate('del');">del</div>
-            <div class="col-3 text-center" onclick="calculate('%');">%</div>
-            <div class="col-3 text-center" onclick="calculate('/');">÷</div>
+            <div class="col-3 text-center bg-secondary text-light fw-bold align-middle" onclick="calculate('C');">C</div>
+            <div class="col-3 text-center bg-secondary text-light fw-bold" onclick="calculate('del');">del</div>
+            <div class="col-3 text-center bg-secondary text-light fw-bold" onclick="calculate('%');">%</div>
+            <div class="col-3 text-center fw-bold" id="orange" onclick="calculate('/');">÷</div>
         </div>
         <!-- second row -->
         <div class="row">
-            <div class="col-3 text-center" onclick="calculate('7');">7</div>
-            <div class="col-3 text-center" onclick="calculate('8');">8</div>
-            <div class="col-3 text-center" onclick="calculate('9');">9</div>
-            <div class="col-3 text-center" onclick="calculate('*');">x</div>
+            <div class="col-3 text-center fw-bold" onclick="calculate('7');">7</div>
+            <div class="col-3 text-center fw-bold" onclick="calculate('8');">8</div>
+            <div class="col-3 text-center fw-bold" onclick="calculate('9');">9</div>
+            <div class="col-3 text-center fw-bold" id="orange" onclick="calculate('*');">x</div>
         </div>
         <!-- third row -->
         <div class="row">
-            <div class="col-3 text-center" onclick="calculate('4');">4</div>
-            <div class="col-3 text-center" onclick="calculate('5');">5</div>
-            <div class="col-3 text-center" onclick="calculate('6');">6</div>
-            <div class="col-3 text-center" onclick="calculate('-');">-</div>
+            <div class="col-3 text-center fw-bold" onclick="calculate('4');">4</div>
+            <div class="col-3 text-center fw-bold" onclick="calculate('5');">5</div>
+            <div class="col-3 text-center fw-bold" onclick="calculate('6');">6</div>
+            <div class="col-3 text-center fw-bold" id="orange" onclick="calculate('-');">-</div>
         </div>
         <!-- fourth row -->
         <div class="row">
-            <div class="col-3 text-center" onclick="calculate('1');">1</div>
-            <div class="col-3 text-center" onclick="calculate('2');">2</div>
-            <div class="col-3 text-center" onclick="calculate('3');">3</div>
-            <div class="col-3 text-center" onclick="calculate('+');">+</div>
+            <div class="col-3 text-center fw-bold" onclick="calculate('1');">1</div>
+            <div class="col-3 text-center fw-bold" onclick="calculate('2');">2</div>
+            <div class="col-3 text-center fw-bold" onclick="calculate('3');">3</div>
+            <div class="col-3 text-center fw-bold" id="orange" onclick="calculate('+');">+</div>
         </div>
         <!-- fifth row -->
         <div class="row">
-            <div class="col-3 text-center" onclick="calculate('0');">0</div>
+            <div class="col-3 text-center fw-bold" onclick="calculate('0');">0</div>
             <div class="col-3 text-center" onclick="calculate('0')"></div>
-            <div class="col-3 text-center" onclick="calculate('.');">.</div>
-            <div class="col-3 text-center" onclick="calculate('=');">=</div>
+            <div class="col-3 text-center fw-bold" onclick="calculate('.');">.</div>
+            <div class="col-3 text-center fw-bold" id="orange" onclick="calculate('=');">=</div>
         </div>
     </div>
 
